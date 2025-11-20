@@ -19,6 +19,19 @@ The starter project includes:
 
 This starter app is compatible with any [custom web/mobile frontend](https://docs.livekit.io/agents/start/frontend/) or [SIP-based telephony](https://docs.livekit.io/agents/start/telephony/).
 
+## Architecture & Flow
+
+The agent follows a structured conversation flow for healthcare provider search and appointment booking. See the complete flow diagram below:
+
+![Agent Flow Diagram](./MermaidDiagram.png)
+
+The diagram illustrates:
+- **User Identity Verification**: First name, last name, and date of birth verification with spelling confirmation
+- **Database Integration**: User lookup in PostgreSQL database (`healthcare_agent`)
+- **Provider Search**: Semantic search using Pinecone vector database
+- **Appointment Booking**: Verified users can book appointments with email and SMS confirmations
+- **Frontend Integration**: Provider details displayed in modal via data channel
+
 ## Coding agents and MCP
 
 This project is designed to work with coding agents like [Cursor](https://www.cursor.com/) and [Claude Code](https://www.anthropic.com/claude-code). 
@@ -52,7 +65,7 @@ The project includes a complete [AGENTS.md](AGENTS.md) file for these assistants
 Clone the repository and install dependencies to a virtual environment:
 
 ```console
-cd agent-starter-python
+cd LiveKitAgent
 uv sync
 ```
 
