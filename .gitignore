@@ -1,0 +1,28 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__
+.idea
+KMS
+.venv
+venv/
+.vscode
+*.egg-info
+.pytest_cache
+.ruff_cache
+
+# Gmail/Google credentials - ADD THESE LINES
+credentials.json
+token.json
+token.pickle
+*.pickle
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Alembic (if using migrations)
+alembic/versions/*.py
+!alembic/versions/__init__.py
