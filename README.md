@@ -6,6 +6,14 @@
 
 A complete starter project for building voice AI apps with [LiveKit Agents for Python](https://github.com/livekit/agents) and [LiveKit Cloud](https://cloud.livekit.io/).
 
+## 📹 Demo Video
+
+Watch the healthcare voice agent in action:
+
+[🎥 Watch Demo Video on Google Drive](https://drive.google.com/file/d/1RxNfOknS9xrM_pO0g3K5pHVPkemBE85S/view?usp=sharing)
+
+The demo showcases the complete user flow including identity verification, provider search, and appointment booking with email/SMS confirmations.
+
 The starter project includes:
 
 - A simple voice AI assistant, ready for extension and customization
